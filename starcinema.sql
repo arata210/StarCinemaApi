@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS starcinema;
+
+USE starcinema;
+
+CREATE TABLE IF NOT EXISTS users (
+    id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(10) NOT NULL,
+    phone VARCHAR(11) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    status INT(1) DEFAULT 0
+);
