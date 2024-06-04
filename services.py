@@ -93,7 +93,7 @@ def index():
     return 'Welcome to StarCinema!'
 
 
-@app.route('/passcode')
+@app.route('/api/my/passcode')
 def passcode():
     phone = request.args.get('phone')
     if phone is None:
@@ -113,7 +113,7 @@ def passcode():
     return str(code)
 
 
-@app.route('/check')
+@app.route('/api/my/check')
 def check():
     phone = request.args.get('phone')
     code = request.args.get('code')
